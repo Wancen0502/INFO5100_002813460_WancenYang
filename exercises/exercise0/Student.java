@@ -38,6 +38,7 @@ public class Student {
             this.active = active;
     }
 
+
     public class ContactInformation{
         String addressline1;
         String addressline2;
@@ -48,6 +49,7 @@ public class Student {
         String phoneNumber2;
         String Email;
 
+    // ContactInformation is one of nest class of student class.
         public ContactInformation(String a1, String c, String z, String s, String pn1, String pn2, String e){
             addressline1 = a1;
             city = c;
@@ -71,6 +73,7 @@ public class Student {
 
 
     }
+    // Transcript is one of nest class of student class.
     public class Transcript{
         int StudentID;
         String Name;
