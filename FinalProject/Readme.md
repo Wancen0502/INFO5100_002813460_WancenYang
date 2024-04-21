@@ -1,1 +1,2 @@
-Wancen Yang's husband did this
+INFO5100 Final Project.
+Done by Wancen Yang and Xintong Wang
