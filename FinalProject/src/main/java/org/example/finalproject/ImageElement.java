@@ -6,6 +6,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.stage.FileChooser;
 import javax.imageio.ImageIO;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -68,7 +69,13 @@ public class ImageElement implements ImageOperate { // Implements the ImageOpera
                     File savingFile = gf.getInputFile();
                     BufferedImage saving = ImageIO.read(savingFile);
                     // Write the image to the selected file using ImageIO
-                    ImageIO.write(saving, s, file);
+                    if (s == "jpg"|| s== "jpeg"){ // handling with PNG image within transparent background when it is transformed to JPG/JPEG
+                    BufferedImage newBufferedImage = new BufferedImage(saving.getWidth(),saving.getHeight(),saving.TYPE_INT_BGR);
+                    newBufferedImage.createGraphics().drawImage(saving,0,0, Color.WHITE,null);
+                    ImageIO.write(newBufferedImage, s, file);
+                    }else{
+                        ImageIO.write(saving, s, file);
+                    }
 
                 } catch (Exception e) {
                     e.printStackTrace();
