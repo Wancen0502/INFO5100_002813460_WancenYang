@@ -1,0 +1,32 @@
+{
+  "Book Shelf": {
+    "Book1":
+      {
+        "title": "1984",
+        "publishedYear": "1949",
+        "numberOfPages": "328",
+        "authors": [
+          "George Orwell"
+        ]
+      },
+    "Book2":
+      {
+        "title": "The Great Gatsby",
+        "publishedYear": "1925",
+        "numberOfPages": "180",
+        "authors": [
+          "F. Scott Fitzgerald"
+        ]
+      },
+    "Book3":
+      {
+        "title": "Freakonomics: A Rogue Economist Explores the Hidden Side of Everything",
+        "publishedYear": "2005",
+        "numberOfPages": "315",
+        "authors": [
+          "Steven D. Levitt",
+          "Stephen J. Dubner"
+        ]
+      }
+  }
+}
